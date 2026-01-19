@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#33aeff" />
+    <title>Prime City</title>
+    <meta
+      name="description"
+      content="منصّة مجتمعية بتجربة حديثة — تصميم سريع، متجاوب، وبلمسة خاصة."
+    />
+
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+    <header class="header" data-elevate>
+      <div class="container header__inner">
+        <a class="brand" href="#" aria-label="العودة للرئيسية">
+          <img class="brand__logo" src="assets/logo.png" alt="الشعار" />
+          <div class="brand__text">
+            <span class="brand__name">Prime City</span>
+            <span class="brand__tag">تجربة مجتمعية حديثة</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="sr-only">القائمة</span>
+        </button>
+
+        <nav id="nav" class="nav" aria-label="التنقّل">
+          <a class="nav__link" href="index.html">الرئيسية</a>
+          <a class="nav__link" href="rules.html">القوانين</a>
+          <a class="nav__link" href="apply.html">التقديم</a>
+          <a class="nav__link" href="store.html">المتجر</a>
+          <a class="nav__link" href="login.html">تسجيل الدخول</a>
+          <a class="nav__link" href="https://discord.gg/FfFmkEzY" target="_blank" rel="noreferrer"
+            >Discord</a
+          >
+          <a class="btn btn--solid nav__cta" href="apply.html">قدّم الآن</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <div class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              <span>مرحباً بك في <b>Prime City</b> — مجتمعك المميز</span>
+            </div>
+
+            <h1 class="hero__title">
+              نبني تجربة
+              <span class="grad">سريعة وجذّابة</span>
+              لمجتمعك
+            </h1>
+            <p class="hero__subtitle">
+              نفس روح المواقع الاحترافية، لكن بمحتواك وشعارك وأسلوبك—بتصميم متجاوب،
+              وأداء ممتاز، وتجربة مستخدم مريحة.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--solid" href="#join">قدّم الآن</a>
+              <a class="btn btn--ghost" href="#features">شوف المميزات</a>
+            </div>
+
+            <div class="hero__mini">
+              <div class="mini-card">
+                <div class="mini-card__kpi">24/7</div>
+                <div class="mini-card__label">دعم فني متواصل</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card__kpi">RTL</div>
+                <div class="mini-card__label">دعم عربي كامل</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card__kpi">100%</div>
+                <div class="mini-card__label">تجربة مضمونة</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" aria-hidden="true">
+            <div class="glass">
+              <div class="glass__top">
+                <div class="status">
+                  <span class="status__dot"></span>
+                  <span>Online</span>
+                </div>
+                <div class="chips">
+                  <span class="chip">Community</span>
+                  <span class="chip">Events</span>
+                  <span class="chip">Shop</span>
+                </div>
+              </div>
+              <div class="glass__body">
+                <img class="hero-logo" src="assets/logo.png" alt="" />
+                <div class="bars">
+                  <span style="--h: 58%"></span>
+                  <span style="--h: 82%"></span>
+                  <span style="--h: 46%"></span>
+                  <span style="--h: 70%"></span>
+                  <span style="--h: 90%"></span>
+                  <span style="--h: 60%"></span>
+                </div>
+              </div>
+              <div class="glow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="about">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">من نحن</h2>
+            <p class="section__desc">
+              Prime City هو مجتمع عربي نشط يجمع محبي الألعاب، التطوير، والترفيه.
+              نهدف لبناء بيئة آمنة وممتعة للجميع.
+            </p>
+          </div>
+
+          <div class="stats reveal">
+            <div class="stat">
+              <div class="stat__num" data-count="500">0</div>
+              <div class="stat__label">عضو نشط</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-count="170">0</div>
+              <div class="stat__label">متابعين (مثال)</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-count="60">0</div>
+              <div class="stat__label">شركاء (مثال)</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" data-count="24">0</div>
+              <div class="stat__label">ساعة دعم (مثال)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">المميزات</h2>
+            <p class="section__desc">
+              أقسام واضحة، بطاقات أنيقة، وحركات بسيطة تعطي الموقع حياة بدون ثقل.
+            </p>
+          </div>
+
+          <div class="grid reveal">
+            <article class="card">
+              <h3 class="card__title">تصميم حديث</h3>
+              <p class="card__text">
+                تدرجات محسوبة مع لونك الأساسي، وواجهة “Glass” خفيفة تعطي لمسة فخامة.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">متجاوب 100%</h3>
+              <p class="card__text">
+                موبايل أولاً، ثم تابلت وديسكتوب—بدون كسر تصميم أو نصوص.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">أداء سريع</h3>
+              <p class="card__text">
+                ملفات قليلة وبسيطة، تحميل سريع، وتجربة مريحة حتى على الأجهزة الضعيفة.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">أقسام قابلة للتبديل</h3>
+              <p class="card__text">
+                تقدر تغيّر أسماء الأقسام، النصوص، والأزرار بسهولة حسب مشروعك.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">دعم عربي RTL</h3>
+              <p class="card__text">
+                اتجاه صحيح، تباعد مناسب، وخط Cairo لقراءة واضحة.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="card__title">لمسة خاصة</h3>
+              <p class="card__text">
+                Animations خفيفة + تفاصيل UI صغيرة تميزك عن النسخ “الجاهزة”.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="join">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">طريقة الانضمام</h2>
+            <p class="section__desc">
+              ثلاث خطوات بسيطة. (بنعدلها حسب نوع مشروعك: سيرفر/منصة/شركة…)
+            </p>
+          </div>
+
+          <ol class="steps reveal">
+            <li class="step">
+              <div class="step__num">1</div>
+              <div class="step__body">
+                <h3 class="step__title">جهّز معلوماتك</h3>
+                <p class="step__text">اسم المستخدم + وسيلة تواصل + نبذة قصيرة.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__num">2</div>
+              <div class="step__body">
+                <h3 class="step__title">قدّم الطلب</h3>
+                <p class="step__text">من نموذج التقديم أو عبر تواصل سريع.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__num">3</div>
+              <div class="step__body">
+                <h3 class="step__title">انضمّ وابدأ</h3>
+                <p class="step__text">تفعيل سريع وتعليمات واضحة لبدء التجربة.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">أسئلة شائعة</h2>
+            <p class="section__desc">أجوبة مختصرة وسهلة. (بنبدلها حسب محتواك)</p>
+          </div>
+
+          <div class="faq reveal">
+            <details class="qa">
+              <summary>هل الموقع جاهز للنشر مباشرة؟</summary>
+              <p>نعم—النسخة الحالية Static وتشتغل محلياً أو على أي استضافة بسهولة.</p>
+            </details>
+            <details class="qa">
+              <summary>هل أقدر أضيف تسجيل دخول/متجر لاحقاً؟</summary>
+              <p>أكيد. نقدر نطوره إلى Next.js أو Laravel/Node حسب احتياجك.</p>
+            </details>
+            <details class="qa">
+              <summary>كيف أغيّر النصوص والأقسام؟</summary>
+              <p>كل شيء داخل ملف `index.html` بشكل واضح، والألوان داخل `styles.css`.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="contact">
+        <div class="container">
+          <div class="cta reveal">
+            <div class="cta__text">
+              <h2 class="cta__title">خلّينا نضبطه بمحتواك</h2>
+              <p class="cta__desc">
+                تواصل معنا الآن عبر الديسكورد، أو قدّم طلبك مباشرة.
+              </p>
+            </div>
+            <div class="cta__actions">
+              <a
+                class="btn btn--solid"
+                href="https://discord.gg/FfFmkEzY"
+                target="_blank"
+                rel="noreferrer"
+                >انضم للديسكورد</a
+              >
+              <a class="btn btn--ghost" href="apply.html">التقديم</a>
+              <a class="btn btn--ghost" href="#top" data-top>للأعلى</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="الشعار" class="footer__logo" />
+          <div>
+            <div class="footer__name">Prime City</div>
+            <div class="footer__small">© <span data-year></span> جميع الحقوق محفوظة</div>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="rules.html">القوانين</a>
+          <a href="apply.html">التقديم</a>
+          <a href="store.html">المتجر</a>
+          <a href="login.html">تسجيل الدخول</a>
+          <a href="https://discord.gg/FfFmkEzY" target="_blank" rel="noreferrer">Discord</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
+
