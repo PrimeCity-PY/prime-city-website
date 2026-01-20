@@ -1050,3 +1050,130 @@ a {
   }
 }
 
+
+/* ==========================================================================
+   تنسيقات صفحة قريباً (Coming Soon) - مركز التجهيزات
+   ========================================================================== */
+
+/* الحاوية الرئيسية للرسالة */
+.coming-soon-wrapper {
+  text-align: center;
+  padding: 60px 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(15px);
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: var(--shadow);
+}
+
+/* أيقونة الشعار المتحركة */
+.coming-soon__icon {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(0 0 20px rgba(51, 174, 255, 0.4));
+  animation: floating 3s ease-in-out infinite;
+}
+
+.pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--primary);
+  opacity: 0.15;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  z-index: 1;
+}
+
+/* النصوص */
+.coming-soon__content h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.coming-soon__content p {
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* خطوات التجهيز (Progress Steps) */
+.coming-soon__steps {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.mini-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(51, 174, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(51, 174, 255, 0.1);
+}
+
+.mini-step .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* حالات النقاط */
+.mini-step .dot.done {
+  background: #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.mini-step .dot.loading {
+  background: #f1c40f;
+  animation: blink 1s infinite;
+}
+
+/* الأنيميشن */
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* تحسين استجابة الجوال */
+@media (max-width: 600px) {
+  .coming-soon__steps {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+  }
+  .coming-soon-wrapper {
+      padding: 40px 20px;
+  }
+}
